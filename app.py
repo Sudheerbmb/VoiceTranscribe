@@ -1,6 +1,6 @@
 import os
 import subprocess
-import whisper
+import whisper 
 import google.generativeai as genai
 import nltk
 import time
@@ -32,7 +32,7 @@ def convert_m4a_to_wav(m4a_file):
     return wav_file
 
 def transcribe_audio(wav_file, model_size="base"):
-    model = whisper.load_model(model_size)
+    model = whisper.load_model(model_size)  
     result = model.transcribe(wav_file, fp16=False)
     return result['text']
 
