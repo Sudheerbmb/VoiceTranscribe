@@ -7,7 +7,7 @@ import time
 from flask import Flask, request, render_template, send_file
 from werkzeug.utils import secure_filename
 
-GOOGLE_GEMINI_API_KEY = "AIzaSyBmL_zLi-7T6Ait-lpxJudUmNAZjkvk7TA"
+GOOGLE_GEMINI_API_KEY = ""
 genai.configure(api_key=GOOGLE_GEMINI_API_KEY)
 
 nltk.download('punkt')
